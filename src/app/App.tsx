@@ -1,6 +1,6 @@
 import React from "react";
 import { Router } from "common/router/router";
-import { useAuthInitialization } from "common/authInitialization/authInitialization";
+import { useAuthInitialization } from "features/auth/authInitialization/authInitialization";
 import s from "./App.module.css";
 
 function App() {
