@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://MalevichDi2910.github.io/our_team",
+  "homepage": "https://MalevichDi2910.github.io/our_team/",
   "dependencies": {
     "@fontsource/roboto": "^5.0.13",
     "@hookform/resolvers": "^3.9.0",
