@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .form {
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 20px 0 #00000014;
+    padding: 16px;
+    border-radius: 16px;
+
+    .titles {
+      display: flex;
+
+      .link {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+          color: var(--color-primary-100);
+        }
+
+        .title {
+          font-size: var(--font-size-m);
+          font-weight: var(--font-weight-regular);
+          line-height: var(--line-height-s);
+        }
+      }
+
+      .active {
+        color: var(--color-primary-200);
+      }
+
+      .headerDelimiter {
+        font-size: 22px;
+        font-weight: 700;
+        color: #e9e6e4;
+        padding: 0 10px;
+      }
+    }
+
+    .errorLogin {
+      display: inline-block;
+      padding-top: 10px;
+      font-size: var(--font-size-xs);
+      font-weight: var(--font-weight-regular);
+      line-height: var(--line-height-xs);
+      color: var((--color-danger-100));
+    }
+  }
+}
