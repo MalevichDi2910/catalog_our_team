@@ -27,7 +27,7 @@
     width: 18px;
     height: 18px;
     top: 26px;
-    left: 16px;
+    left: 10px;
 
     @media screen and (min-width: 1110px) {
       display: none;
@@ -61,8 +61,8 @@
     .editButton {
       cursor: pointer;
       position: absolute;
-      top: 140px;
-      left: 120px;
+      bottom: -10px;
+      left: 130px;
     }
 
     .partnerInfo {
@@ -108,7 +108,7 @@
     height: 18px;
     position: absolute;
     top: 24px;
-    right: 28px;
+    right: 34px;
 
     @media screen and (min-width: 1110px) {
       display: none;
