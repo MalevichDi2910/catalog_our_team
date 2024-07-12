@@ -8,7 +8,7 @@ import { Layout } from "./../layout/layout";
 import { PrivateRoutes } from "./privateRoutes";
 import { privateRoutes, publicRoutes } from "./settings";
 
-const basename = "our_team/";
+const basename = "/our_team/";
 
 const router = createBrowserRouter(
   [
