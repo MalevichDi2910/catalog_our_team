@@ -1,0 +1,25 @@
+.paginator {
+  margin-bottom: 50px;
+
+  .buttons {
+    &:disabled {
+      cursor: initial;
+      opacity: 0.5;
+    }
+  }
+
+  .active {
+    font-weight: var(--font-weight-bold);
+    background-color: var(--color-primary-200);
+    color: var(--color-light-100);
+  }
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  background-color: var(--color-dark-100);
+  margin-left: 10px;
+  padding: 4px 12px;
+  border-radius: 10px;
+}
