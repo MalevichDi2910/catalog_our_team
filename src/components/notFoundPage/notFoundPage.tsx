@@ -8,7 +8,7 @@ export const NotFoundPage = () => {
   const navigate = useNavigate();
 
   const goBack = () => {
-    navigate("/users");
+    navigate("/");
   };
 
   return (
