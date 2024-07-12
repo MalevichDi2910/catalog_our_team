@@ -2,8 +2,17 @@
 <html>
   <head>
     <meta http-equiv="refresh" content="0; url=/" />
+    <script>
+      // Для обработки JavaScript и перенаправления на index.html
+      (function () {
+        var path = window.location.pathname;
+        if (path !== "/" && path !== "/index.html") {
+          window.location.replace("/");
+        }
+      })();
+    </script>
   </head>
   <body>
-    <p>If you are not redirected, <a href="/public">click here</a>.</p>
+    <p>If you are not redirected, <a href="/">click here</a>.</p>
   </body>
 </html>
