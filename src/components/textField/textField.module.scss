@@ -1,0 +1,51 @@
+@mixin input() {
+  height: 48px;
+  background-color: var(--color-dark-100);
+  padding: 12px 8px 12px 16px;
+  outline: none;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 14px;
+  position: relative;
+
+  label {
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-xs);
+    margin: 8px 0;
+  }
+
+  .inputField {
+    @include input;
+    margin-bottom: 8px;
+    &:focus {
+      border: 1px solid var(--color-primary-200);
+    }
+  }
+
+  .errorField {
+    @include input;
+    border: 1px solid var(--color-danger-100);
+  }
+
+  .eyeIcon {
+    position: absolute;
+
+    top: 48px;
+    right: 12px;
+
+    width: 24px;
+    height: 24px;
+  }
+
+  .error {
+    font-size: var(--font-size-xs);
+    color: var(--color-danger-100);
+  }
+}
