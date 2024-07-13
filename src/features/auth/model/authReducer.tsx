@@ -6,7 +6,7 @@ const LOGIN_SUCCESS = "LOGIN_SUCCESS";
 const LOGOUT = "LOGOUT";
 
 const initialState = {
-  isAuthenticated: !!localStorage.getItem("token"),
+  isAuthenticated: false,
 };
 
 type AuthStateType = typeof initialState;
