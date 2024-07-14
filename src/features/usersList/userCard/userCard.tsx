@@ -15,12 +15,14 @@ export const UserCard = ({ user }: UserCardPropsType) => {
   };
 
   return (
-    <div className={s.card}>
+    <div className={s.container}>
       <Link to={`/users/${user.id}`} className={s.link}>
-        <img src={user.avatar} alt={`${user.first_name} ${user.last_name}`} />
-        <span className={s.info}>
-          {user.first_name} {user.last_name}
-        </span>
+        <div className={s.card}>
+          <img src={user.avatar} alt={`${user.first_name} ${user.last_name}`} />
+          <span className={s.info}>
+            {user.first_name} {user.last_name}
+          </span>
+        </div>
       </Link>
       <span className={s.like} onClick={handleLike}>
         <Like

@@ -1,44 +1,47 @@
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.container {
   position: relative;
-  width: 304px;
-  height: 264px;
-  border-radius: 10px;
-  padding: 20px 80px 36px 80px;
-  gap: 16px;
-  box-shadow: 0 1px 3.98px 0 #33333326;
-
-  &:hover {
-    border: var(--color-dark-300) 1px solid;
-  }
 
   .link {
     cursor: pointer;
     text-decoration: none;
     text-align: center;
-  }
 
-  img {
-    border-radius: 50%;
-    width: 124px;
-    height: 124px;
-    object-fit: cover;
-  }
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 304px;
+      height: 264px;
+      border-radius: 10px;
+      padding: 20px 80px 36px 80px;
+      gap: 16px;
+      box-shadow: 0 1px 3.98px 0 #33333326;
 
-  .info {
-    font-size: var(--font-size-m);
-    font-weight: var(--font-weight-regular);
-    line-height: var(--line-height-s);
-    color: var(--color-dark-300);
+      &:hover {
+        border: var(--color-dark-300) 1px solid;
+      }
+
+      img {
+        border-radius: 50%;
+        width: 124px;
+        height: 124px;
+        object-fit: cover;
+      }
+
+      .info {
+        font-size: var(--font-size-m);
+        font-weight: var(--font-weight-regular);
+        line-height: var(--line-height-s);
+        color: var(--color-dark-300);
+      }
+    }
   }
 
   .like {
     cursor: pointer;
     position: absolute;
-    bottom: 14px;
+    bottom: 10px;
     right: 20px;
   }
 }
